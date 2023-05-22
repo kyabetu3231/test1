@@ -1,0 +1,65 @@
+@charset "UTF-8";
+/*-------------------------
+  変数
+-------------------------*/
+
+
+:root{
+
+  --key-color:#8e44ad;
+--sub-hover:#7e349d;
+}
+/*-------------------------
+  初期値
+-------------------------*/
+body{
+  padding-top:71px;
+  scroll-behavior: smooth;
+}
+@media screen and (max-width: 768px) {
+    body{
+padding-top: 57px;
+    }
+  }
+
+ul{
+  padding-left: 0px;
+  list-style: none;
+}
+
+/*-------------------------
+  トップ
+-------------------------*/
+.topics p{
+  text-align: justify;
+  /* Flexコンテナに変換(古い書き方で現在は非推奨) */
+display: -webkit-box;
+/* 要素内の数値軸を垂直に設定 */
+-webkit-box-orient: vertical;
+/* 表示行の高さを行数で保持 */
+-webkit-line-clamp: 7;
+overflow: hidden; 
+}
+.btn-primary{
+  background-color: var(--key-color);
+  border: 1px solid var(--key-color);
+}
+.btn-primary:hover{
+  background-color: var(--sub-hover);
+  border: 1px solid var(--sub-hover);
+}
+
+footer a{
+  color: var(--key-color);
+}
+
+footer a:hover{
+  color: var(--sub-hover);
+}
+
+
+
+.topics .col-lg-4 {
+  /* ドロップダウンメニューに隠れないよう表示位置を変更 */
+  scroll-margin-top: 50vw;
+}
